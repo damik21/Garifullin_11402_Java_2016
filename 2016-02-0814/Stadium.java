@@ -12,7 +12,7 @@ public interface Stadium {
     String country = null;
     Team team = null;
 
-    public String toString(Stadium stadium);
+    public String toString();
     public ArrayList allMatches(Stadium stadium); //показать все матчи,сыгранные на даном стадионе
     public int age(Stadium stadium); //возраст стадиона
     public ArrayList allStadiumsInCountry(Stadium stadium);//все стадионы в стране

@@ -11,7 +11,7 @@ public interface Match {
     Team team2 = null;
     ArrayList<Goal> goals = null;
 
-    public String toString(Match match);
+    public String toString();
     public ArrayList allGoals(Match match);
     public ArrayList historyOfOpposition(Match match); //история встреч
     public ArrayList lastFiveMatchesTeam1(Match match); //последние 5 матчей команды 2

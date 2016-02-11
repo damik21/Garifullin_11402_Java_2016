@@ -5,13 +5,15 @@ import java.util.ArrayList;
  */
 public interface Team {
     String name = null;
+    String league = null;
     int foundationYear = -1;
     ArrayList<Player> players = null;
     Stadium homeStadium = null;
     Coach coach = null;
-    ArrayList<Team> historyTeams = null;
+    ArrayList<Team> historyCoaches = null;
+    String country = null;
 
-    public String toString(Team team);
+    public String toString();
     public int goalsFrom(Team team); //забитых голов
     public int goalsAgainst(Team team);//пропущено
     public ArrayList matchList(Team team);//список всех матчей

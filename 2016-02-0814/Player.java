@@ -10,7 +10,7 @@ public interface Player {
     String country = null;
     ArrayList<Goal> goals = null;
 
-    public String toString(Player player);
+    public String toString();
     public int countGoals(Player player); //кол-во голов забитых данным игроком
     public int countGoals(Player player,int season); //кол-во голов забитых в этом сезоне
     public ArrayList scoredTeams(Player player);//команды,которым забивал этот игрок
