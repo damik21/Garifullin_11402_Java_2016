@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.controllers.MovieSessionsController">
+  <children>
+    <Pane layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="600.0">
+      <children>
+        <Pane layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="168.0" style="-fx-background-color: lightskyblue">
+          <children>
+            <Button blendMode="SRC_OVER" layoutX="14.0" layoutY="43.0" mnemonicParsing="false" onAction="#handleMoviesPage" prefHeight="30.9609375" prefWidth="140.0" style="-fx-background-color : orangered" text="Movies">
+              <font>
+                <Font name="Aharoni Bold" size="12.0" fx:id="x1" />
+              </font>
+            </Button>
+            <Button font="$x1" layoutX="14.0" layoutY="105.0" mnemonicParsing="false" onAction="#handlePersonalPage" prefHeight="30.9609375" prefWidth="140.0" style="-fx-background-color : orangered" text="Personal" />
+            <Button defaultButton="true" font="$x1" layoutX="14.0" layoutY="74.0" mnemonicParsing="false" onAction="#handleMovieSessionsPage" prefHeight="30.9609375" prefWidth="140.0" style="-fx-background-color : orangered" text="Movie Sessions" />
+            <Button cancelButton="false" defaultButton="false" focusTraversable="true" font="$x1" layoutX="14.0" layoutY="136.0" mnemonicParsing="false" onAction="#handleFeedbacksPage" prefHeight="30.9609375" prefWidth="140.0" style="-fx-background-color : orangered&#10;" text="Feedback" textOverrun="CLIP" underline="false" visible="true" wrapText="false" />
+            <Button layoutX="32.0" layoutY="201.0" mnemonicParsing="false" prefWidth="105.0" style="-fx-background-color : green" text="Add new movie session" />
+          </children>
+        </Pane>
+        <FlowPane layoutX="168.0" layoutY="0.0" prefHeight="386.0" prefWidth="432.0" style="-fx-background-color: lightblue">
+          <children>
+            <TableView fx:id="msTable" prefHeight="370.0" prefWidth="432.0" style="-fx-background-color : lightblue">
+              <columns>
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="37.0" text="id" fx:id="id" />
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="91.0" style="" text="movie" fx:id="movie" />
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="79.0" text="hall" fx:id="hall" />
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="83.0" text="date" fx:id="date" />
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="94.0" text="time" fx:id="time" />
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="46.0" text="price" fx:id="price" />
+              </columns>
+            </TableView>
+          </children>
+        </FlowPane>
+        <Label alignment="CENTER" layoutX="168.0" layoutY="384.0" prefWidth="432.0" style="-fx-background-color: deepskyblue" text="Created by Damir, 2016" />
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>
